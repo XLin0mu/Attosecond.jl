@@ -1,5 +1,6 @@
 module Attosecond
+using Dates
 
-greet() = print("Hello World!")
-
+body = "bodys.jl"
+include_string(Dates, "include(\"$body\")")
 end # module Attosecond
